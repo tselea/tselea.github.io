@@ -11,6 +11,15 @@
       {% for item in site.data.publications.index %}
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Awards</h3>
+    {% for item in site.data.awards.index %}
+        <p>{{ item.name }}</p>
+        <ul>
+            {% for detail in item.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+      {% endfor %}
     {% endif %}
   </div>
 </div>
