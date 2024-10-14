@@ -11,12 +11,12 @@
   {% endif %}
       {% endfor %}
     {% else %}
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Latest Scientific Publications <a href="https://scholar.google.com/citations?user=dqXsO5MAAAAJ&hl=ro" target="_blank">(View the entire list on the Google Scholar Profile)</a> </h3>
-
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Latest Publications</h3>
+    <p>View the entire list of scientific publications on the <a href="https://scholar.google.com/citations?user=dqXsO5MAAAAJ&hl=ro" target="_blank">Google Scholar Profile</a> </p>
       {% for item in site.data.publications.index %}
-       {% if item.url-short %}
+       {% if item.urlshort %}
     <p><a href="{{ item.url}}">{{ item.name }}</a></p>
-    <p><a href="{{ item.url-short}}">{{ Summary }}</a></p>
+    <p><a href="{{ item.urlshort}}">{{ Summary }}</a></p>
   {% else %}
     <p><a href="{{ item.url }}">{{ item.name }}</a></p>
   {% endif %}
