@@ -12,6 +12,22 @@ layout: default
         <h4>Junior Researcher</h4>
       </div>
       <div class="col-md-10">
+        {% for section in site.data.cv.ai-gmv-experience %}
+          <p class="fw-bold">{{ section.title }}</p>
+          <p>{{ section.description }}</p>
+          <ul>
+            {% for detail in section.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Junior Researcher</h4>
+      </div>
+      <div class="col-md-10">
         {% for section in site.data.cv.sw-uvt-experience %}
           <p class="fw-bold">{{ section.title }}</p>
           <p>{{ section.description }}</p>
