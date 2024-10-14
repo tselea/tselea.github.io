@@ -3,7 +3,6 @@ layout: home
 title: "Home"
 ---
 
-## Hi! I'm Teodora,
 
 I'm an AI Engineer with over 9 years of experience in both academic research and industry applications, specializing in solving challenges in the **geospatial domain**. My passion lies in leveraging **AI to solve real-world problems**. In recent years, I’ve focused on **geospatial applications**, using AI to process and analyze satellite imagery. Whether applying **machine learning**, **deep learning**, or **data science** methodologies, my goal is to create impactful AI solutions that drive innovation across industries.
 
