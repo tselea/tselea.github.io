@@ -3,13 +3,23 @@
     {% if page.title == "Home" %}
     <h3 class="fw-bold border-bottom pb-3 mb-5">Latest Publications</h3>
       {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+       {% if item.url-short %}
+    <p><a href="{{ item.url}}">{{ item.name }}</a></p>
+    <p><a href="{{ item.url-short}}">{{ Summary }}</a></p>
+  {% else %}
+    <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+  {% endif %}
       {% endfor %}
     {% else %}
     <h3 class="fw-bold border-bottom pb-3 mb-5">Latest Scientific Publications <a href="https://scholar.google.com/citations?user=dqXsO5MAAAAJ&hl=ro" target="_blank">(View the entire list on the Google Scholar Profile)</a> </h3>
 
       {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+       {% if item.url-short %}
+    <p><a href="{{ item.url}}">{{ item.name }}</a></p>
+    <p><a href="{{ item.url-short}}">{{ Summary }}</a></p>
+  {% else %}
+    <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+  {% endif %}
       {% endfor %}
     <h3 class="fw-bold border-bottom pb-3 mb-5">Awards</h3>
     {% for item in site.data.awards.index %}
